@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios JavaScript</title>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+
+
+  <table id="equipe">
+    <thead>
+      <tr>
+        <th>R.A</th>
+        <th>Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025106378</td>
+        <td>Eduardo</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>2025106973</td>
+        <td>Giovanni Sotta Dutra de Freitas</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>2025106332</td>
+        <td>Nome William Schner e Silva</td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+        <td>2025105823</td>
+        <td>Lucas Barra Nova Bernarde</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <!-- Exercício 1: Escrever 10 Parágrafos -->
+  <section id="ex-paragrafos">
+    <h2>Escrever 10 Parágrafos</h2>
+    <button onclick="gerarParagrafos()">Gerar Parágrafos</button>
+    <div id="containerParagrafos"></div>
+    <p class="."></p>
+  </section>
+  <hr>
+
+  <!-- Exercício 2: Tabuada -->
+  <section id="ex-tabuada">
+    <h2>Tabuada</h2>
+    <label for="inputTabuada">Valor (entre 1 e 10):</label>
+    <input type="number" id="inputTabuada" min="1" max="10">
+    <button onclick="Tabuada()">Calcular Tabuada</button>
+    <div id="resultadoTabuada"></div>
+  </section>
+
+  <hr>
+
+  <!-- Exercício 3: Média de Notas -->
+  <section id="ex-media">
+    <h2>Média de Notas</h2>
+    <div class="input-group">
+      <label for="nota1">Nota 1:</label>
+      <input type="number" id="nota1" step="0.1">
+    </div>
+    <div class="input-group">
+      <label for="nota2">Nota 2:</label>
+      <input type="number" id="nota2" step="0.1">
+    </div>
+    <div class="input-group">
+      <label for="faltas">Quantidade de Faltas:</label>
+      <input type="number" id="faltas">
+    </div>
+    <input type="button" value="Calcular Média" onclick="calcularMedia()"/>
+    <div id="resultadoMedia"></div>
+  </section>
+
+  <hr>
+
+  <!-- Exercício 4: Lista de Compras -->
+  <section id="ex-lista">
+    <h2>Lista de Compras</h2>
+    <div class="input-group">
+      <label for="nomeProduto">Produto:</label>
+      <input type="text" id="nomeProduto">
+    </div>
+    <div class="input-group">
+      <label for="valorProduto">Valor:</label>
+      <input type="number" id="valorProduto" step="0.01">
+    </div>
+    <input type="button" value="Adicionar Item" id="btnAdicionar" onclick="adicionarItem()"/>
+    <input type="button" value="Limpar Lista" id="btnLimpar" onclick="limparLista()"/>
+    <div id="listaCompras"></div>
+    <div id="totalCompras">Total:R$</div>
+    <div id="erroLista" class="erro"></div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

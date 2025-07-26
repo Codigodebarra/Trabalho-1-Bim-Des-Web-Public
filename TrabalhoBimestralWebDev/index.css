@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+table {
+  width: 20%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.Negrito{
+  font-weight: bold;
+}
+/* Destaque da porcaria daquele indice multiplo de 3 maldito */
+.paragrafo-destaque {
+  background-color: #ffc;
+  font-weight: bold;
+}
+
+/* Resultado */
+.Aprovado {
+  color: green;
+  font-weight: bold;
+}
+
+.Reprovado {
+  color: red;
+  font-weight: bold;
+}
+
+/* Erro */
+.erro {
+  color: red;
+  margin-top: 10px;
+}
